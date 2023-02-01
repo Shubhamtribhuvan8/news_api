@@ -1,0 +1,12 @@
+{
+    "name": "news_api",
+    "version": "1.0.0",
+    "dependencies": {
+      "dependency1": "version",
+      "dependency2": "version"
+    },
+    "scripts": {
+      "start": "node index.js"
+    }
+  }
+  
