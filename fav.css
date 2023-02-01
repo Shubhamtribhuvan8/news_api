@@ -1,0 +1,30 @@
+div#container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px;
+}
+body {
+    font-family: 'Lato', sans-serif;
+  }
+
+#box div{
+    /* border: 1px solid gray; */
+    height: 128px;
+}
+
+#box{
+    margin-top: 20px;
+    display: flex;
+}
+
+div#image {
+    width: 128px;
+}
+
+div #fav {
+    right: 0;
+  }
+
+#footer{
+    margin-top: 30%;
+}

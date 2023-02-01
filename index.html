@@ -1,13 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+   <script src="https://kit.fontawesome.com/f6edce582e.js" crossorigin="anonymous"></script>
+   <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAMAAAAua3VzAAAAk1BMVEX///8Af6/JSjj0jwD0igD4t3H++vrIRzTPY1UAe63s9Pj68O9Xmb7IRDD86dn0jx/5xJTTc2jhp6GVvNTIPyn0+PvK4OsigbDB2ufb6/Ll8PY8ibX98OT0ixKawdcAcqg+kLn72LXlsqzqwbz25OHNXE7XfnTv0M3FMRTLUkHFNhzRaVzbjYQkibU/l71vqsmx0eDwAfsrAAABt0lEQVR4nO3c2W7CMBBAUeMCAULaAmFJCmFpWAul//91RUitKmRgnrBHvfc5lo+MB/FCjCEiIiIiIpLVktb3iGxLGzgWj5+FjR2L64uus8V7efloU9rIsU9t8iJqUnMhl6mrJE3sdrWu/320Is2JrD6JqjqRjcheKUo320UcOPLsbCyCR56Yu9XPYYaLtDb9KMNH2rQRh4+0SScOH2nTrgKk3ZQKkOlKATLaluEjbdLVgDwNuNQ4dP0KegQysmX4SLtZK0DuugqQ6V4BMuooQNqlBuRWA9KCBAkSJEiQIEGCBAkSJMhgkRlIkCBBggQJEiRIkCBBgnwsMleAfAMJEiRIkCBB/iJbIEGCBAnyJtL1RzaQIEGCBAkSJEiQIEH+J+RQA/KgAfmpAXlsKkAWUwXIkQZkJjP6RfbbskvpFWl6GpCZ7OvcL9LIPm/PyFw0356RppAc5cwzUjTgvk/S9Gf3ld6RJruv9I80+fHe9Pi+k+eKWfPmaQaBNHlxmN5ghoE8zc/gOBxWrrz77cqdFHbl5W+JrMuV2VfRc1Y4tjHzV2FzF3LfEeba+lHF0nwiiYiIiIhIVd/GvLhS4+AC/gAAAABJRU5ErkJggg==">
+   <script src="https://kit.fontawesome.com/05ed811abe.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="headerFooter.css">
 </head>
+
 <body>
-    <h1>Shubham Tribhuvan</h1>
+  <div id="nav">
+   
+  </div>
+  <!-- topbar part -->
+  <div id="topbar">
+     <img id="logo" src="https://1000logos.net/wp-content/uploads/2020/09/Trivago-logo.png"
+       alt="trivago logo" />
+    
+       
+      <div>
+        <h2>Deals from your favourite booking sites</h2>
+        <p>
+          Try searching for a city, a specific hotel, or even a landmark!
+        <p>
+      </div>
+    </div>
+  </div>
+
+  <!-- middle part -->
+  <div id="middlebar">
+    <div>
+      <div id="first">
+        <div>
+          <a href="">All stays</a>
+          <a href="">Hotel</a>
+          <a href="">House/Apartment</a>
+        </div>
+      </div>
+      <div id="second">
+        <div>
+       <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="input" placeholder="Enter a hotel name or destination name" />
+        </div>
+        <div>
+          <div id="checkin">
+            <label for="checkin">checkin</label>
+            <input type="date" />
+          </div>
+          <div>
+            <label for="checkout">checkout</label>
+            <input type="date" name="" id="" />
+          </div>
+          <div id="room">
+            <label for="checkout">Rooms</label>
+            <input type="number" name="" id="" placeholder="0 rooms"/>
+          </div>
+
+          <button id="but" onclick="refer()" >Search</button>
+        </div>
+      </div>
+      <section id="section">
+        <h3>We compare multiple booking sites at once</h3>
+        <ul>
+          <li><img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos/395.png" alt=""></li>
+          <li><img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos/452.png" alt=""></li>
+          <li><img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos/626.png" alt=""></li>
+          <li><img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos/2192.png" alt="">
+          </li>
+          <li><img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos/14.png" alt=""></li>
+          <li><img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos/634.png" alt=""></li>
+          <li style="font-family: 'Lato', sans-serif; color: grey;">+100more</li>
+
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div id="destination">
+    <div>
+      <h3>These top destinations are just a click away</h3>
+      <div><span>Top cities</span><span>Top destinations</span></div>
+      <hr style="border: 1px solid rgb(90%, 90%, 90%);">
+      <div id="hotels" class="item-div">
+          
+            
+        <div><img
+            src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG90ZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <p><b>Hotels in Mumbai</b></p1>
+            <p>6,871 Hotels <b>Avg. ₹3,826</b> </p>
+        </div>
+        <div><img
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+           <p><b>Hotels in Delhi</b></p1>
+            <p>2,871 Hotels <b>Avg. ₹2,826</b> </p>
+        </div>
+        <div><img
+            src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG90ZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+           <p><b>Hotels in Patna</b></p1>
+            <p>4,871 Hotels <b>Avg. ₹8,826</b> </p>
+        </div>
+        <div><img
+            src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+           <p><b>Hotels in Puri</b></p1>
+            <p>5,871 Hotels <b>Avg. ₹5,826</b> </p>
+        </div>
+        <div><img
+            src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG90ZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <p><b>Hotels in Jaipur</b></p1>
+            <p>4,871 Hotels <b>Avg. ₹4,826</b> </p>
+        </div>
+        <div><img
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <p><b>Hotels in Indore</b></p1>
+            <p>9,871 Hotels <b>Avg. ₹8,826</b> </p>
+        </div>
+        <div><img
+            src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG90ZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <p><b>Hotels in Mumbai</b></p1>
+            <p>6,871 Hotels <b>Avg. ₹3,826</b> </p>
+        </div>
+        <div><img
+            src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <p><b>Hotels in Mumbai</b></p1>
+            <p>6,871 Hotels <b>Avg. ₹3,826</b> </p>
+        </div>
+        
+      </div>
+       
+     
+    </div>
+    
+    <div>
+      <div id="cont1">
+        <div>
+          <h2>trivago's global hotel search</h2>
+          <p>
+            trivago’s hotel search allows users to compare hotel prices in
+            just a few clicks from more than 300 booking sites for more than
+            5.0 million hotels and other types of accommodation in over 190
+            countries. We help millions of travelers each year compare deals
+            for hotels and accommodations. Get information for weekend trips
+            to cities like Mumbai or Bengaluru and you can find the right
+            hotel on trivago quickly and easily. Delhi and its surrounding
+            area are great for trips that are a week or longer with the
+            numerous hotels available.
+          </p>
+        </div>
+        <div>
+          <h2>Find cheap hotels on trivago</h2>
+          <p>
+            With trivago you can easily find your ideal hotel and compare prices from different websites. Simply enter
+            where you want to go and your desired travel dates, and let our hotel search engine compare accommodation
+            prices for you. To refine your search results, simply filter by price, distance (e.g. from the beach), star
+            category, facilities and more. From budget hostels to luxury suites, trivago makes it easy to book online.
+            You can search from a large variety of rooms and locations across India, like Shimla and Jaipur to popular
+            cities and holiday destinations abroad!
+          </p>
+        </div>
+      </div>
+      <div id="cont2">
+        <div>
+          <h2>Hotel reviews help you find your ideal hotel</h2>
+          <p>
+            Over 175 million aggregated hotel ratings and more than 19 million images allow you to find out more about
+            where you're travelling. To get an extended overview of a hotel property, trivago shows the average rating
+            and extensive reviews from other booking sites, e.g. Hotels.com, Expedia, Agoda, leading hotels, etc.
+            trivago makes it easy for you to find information about your trip to Dubai, including the ideal hotel for
+            you.
+          </p>
+        </div>
+        <div>
+          <h2>How to book</h2>
+          <p>
+            trivago is a hotel search with an extensive price comparison. The prices shown come from numerous hotels and
+            booking websites. This means that while users decide on trivago which hotel best suits their needs, the
+            booking process itself is completed through the booking sites (which are linked to our website). By clicking
+            on the “view deal” button, you will be forwarded onto a booking site where you can complete the reservation
+            for the hotel deal found on trivago.
+
+            Let trivago help you to find the right price from over 300 booking sites!
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+    <div>
+      <div id="cont3">
+        <h2>More Top Cities</h2>
+        <div>
+          <div><a href="">Hotels in Bengaluru</a>
+            <a href="">Hotels in Kolkata</a>
+            <a href="">Hotels in Jaipur</a>
+            <a href="">Hotels in Pune</a>
+            <a href="">Hotels in Varanasi
+              <a href="">Hotels in Chandigarh</a>
+            </a>
+            <a href="">Hotels in Puri
+              <a href="">Hotels in Chennai</a>
+            </a>
+            <a href="">Hotels in Shimla
+              <a href="">Hotels in Munnar</a>
+            </a>
+            <a href="">Hotels in Mysore
+              <a href="">Hotels in Kolkata</a>
+            </a>
+            <a href="">Hotels in Shimla
+              <a href="">Hotels in Munnar</a>
+            </a>
+            <a href="">Hotels in Mysore
+              <a href="">Hotels in Kolkata</a>
+
+            </a>
+          </div>
+          <div><a href="">Hotels in Ahemdabad
+              <a href="">Hotels in Amristsar</a>
+            </a>
+            <a href="">Hotels in wayanad
+              <a href="">Hotels in Gurgaon</a>
+            </a>
+            <a href="">Hotels in Nainital
+              <a href="">Hotels in Shirdi</a>
+            </a>
+            <a href="">Hotels in Kolkata</a>
+            <a href="">Hotels in Jodhpur
+              <a href="">Hotels in Nashik</a>
+            </a>
+            <a href="">Hotels in Gokarna
+              <a href="">Hotels in Mangalore</a>
+            </a>
+            <a href="">Hotels in Shimla
+              <a href="">Hotels in Munnar</a>
+            </a>
+            <a href="">Hotels in Mysore
+
+
+            </a>
+            <a href="">Hotels in Bangladesh</a>
+            <a href="">Hotels in Nepal</a>
+
+          </div>
+        </div>
+
+      </div>
+      <div id="cont4">
+        <h2>trivago International</h2>
+        <div>
+          <div><a href="">trivago UAE</a>
+            <a href="">trivago Osterreich</a>
+            <a href="">trivago Australia</a>
+            <a href="">Hotels in USA</a>
+            <a href="">Hotels in Bangladesh</a>
+            <a href="">Hotels in Nepal</a>
+            <a href="">Hotels in Argentina</a>
+            <a href="">Hotels in Chile</a>
+            <a href="">Hotels in Canada</a>
+            <a href="">Hotels in France</a>
+            <a href="">Hotels in India</a>
+            <a href="">trivago UAE</a>
+            <a href="">trivago Osterreich</a>
+            <a href="">trivago Australia</a>
+            <a href="">Hotels in Bangladesh</a>
+            <a href="">Hotels in Nepal</a>
+          </div>
+          <div><a href="">Hotels in Colombia
+              <a href="">Hotels in Dannmark</a>
+            </a>
+            <a href="">Hotels in France</a>
+            <a href="">Hotels in India</a>
+            <a href="">Hotels in Malaysia</a>
+            <a href="">Hotels in Peru</a>
+            <a href="">Hotels in Romania</a>
+            <a href="">Hotels in United Kingdom</a>
+            <a href="">Hotels in Africa</a>
+            <a href="">Hotels in Argentina</a>
+            <a href="">Hotels in Chile</a>
+            <a href="">Hotels in Canada</a>
+            <a href="">Hotels in France</a>
+            <a href="">Hotels in Dannmark</a>
+            <a href="">Hotels in Bangladesh</a>
+            <a href="">Hotels in Nepal</a>
+          </div>
+        </div>
+      </div>
+   </div>
+  </div>
+      <div id="footer"></div>
+      
+      <div id="container">
+
+      </div>
 </body>
+
 </html>
-<script src="App.js"></script>
+<script type="module">
+  import { header,footer } from "./header_footer.js";
+  document.getElementById("nav").innerHTML=header();
+  document.getElementById("footer").innerHTML=footer();
+  </script>
+<script>
+ function refer(){
+  console.log("test")
+  let input= document.querySelector("#input").value;
+  localStorage.setItem("data",input);
+  window.location.href="home2.html"
+ }
+</script>

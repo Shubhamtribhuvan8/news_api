@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivago</title>
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAMAAAAua3VzAAAAk1BMVEX///8Af6/JSjj0jwD0igD4t3H++vrIRzTPY1UAe63s9Pj68O9Xmb7IRDD86dn0jx/5xJTTc2jhp6GVvNTIPyn0+PvK4OsigbDB2ufb6/Ll8PY8ibX98OT0ixKawdcAcqg+kLn72LXlsqzqwbz25OHNXE7XfnTv0M3FMRTLUkHFNhzRaVzbjYQkibU/l71vqsmx0eDwAfsrAAABt0lEQVR4nO3c2W7CMBBAUeMCAULaAmFJCmFpWAul//91RUitKmRgnrBHvfc5lo+MB/FCjCEiIiIiIpLVktb3iGxLGzgWj5+FjR2L64uus8V7efloU9rIsU9t8iJqUnMhl6mrJE3sdrWu/320Is2JrD6JqjqRjcheKUo320UcOPLsbCyCR56Yu9XPYYaLtDb9KMNH2rQRh4+0SScOH2nTrgKk3ZQKkOlKATLaluEjbdLVgDwNuNQ4dP0KegQysmX4SLtZK0DuugqQ6V4BMuooQNqlBuRWA9KCBAkSJEiQIEGCBAkSJMhgkRlIkCBBggQJEiRIkCBBgnwsMleAfAMJEiRIkCBB/iJbIEGCBAnyJtL1RzaQIEGCBAkSJEiQIEH+J+RQA/KgAfmpAXlsKkAWUwXIkQZkJjP6RfbbskvpFWl6GpCZ7OvcL9LIPm/PyFw0356RppAc5cwzUjTgvk/S9Gf3ld6RJruv9I80+fHe9Pi+k+eKWfPmaQaBNHlxmN5ghoE8zc/gOBxWrrz77cqdFHbl5W+JrMuV2VfRc1Y4tjHzV2FzF3LfEeba+lHF0nwiiYiIiIhIVd/GvLhS4+AC/gAAAABJRU5ErkJggg==">
+    <script src="https://kit.fontawesome.com/05ed811abe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="headerFooter.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="flightindex.css">
+</head>
+<body onclick="function1()">
+  <!-- navbar -->
+    <div id="nav">
+    </div>
+
+    <div id="top">
+        <h1>Welcome! Find a flexible flight for your next trip.</h1>
+        <div>
+        <div class="transaction_parent">
+            <div class="topnav">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <h3>Most-Used Currencies</h3>
+                    <div class="rupey">
+                        <div>
+                            <p>₹ Indian Rupees </p>
+                            <p>$ United States Dollars </p>
+                        </div>
+                        <div>
+                            <p>€ Euro</p>
+                            <p> C$ Canadian Dollars </p>
+                        </div>
+                        <div>
+                            <p>₹ Indian Rupees </p>
+                            <p>$ United States Dollars </p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">₹</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="Select">
+        <div id="return">
+            <select name="" id="">
+                <option value="Return">Return</option>
+                <option value="One_Way">One Way</option>
+                <option value="Multi_City">Multi-City</option>
+            </select>
+        </div>
+        <div id="adult">
+            <select name="" id="">
+                <option value="Adults">Adults</option>
+                <option value="Students">Students</option>
+                <option value="Youths">Youths</option>
+                <option value="Children">Children</option>
+                <option value="Toddlers">Toddlers in own seat </option>
+                <option value="Infants">Infants on lap</option>
+            </select>
+        </div>
+        <div id="Economy">
+            <select name="" id="">
+                <option value="Economy">Economy</option>
+                <option value="Premium">Premium Economy</option>
+                <option value="Business">Business</option>
+                <option value="First">First</option>
+                <option value="Multiple">Multiple</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- 
+        <form id="search-form">
+        <input type="text" id="search-input" placeholder="Enter a city name">
+        <button type="submit">Search</button>
+      </form>   
+     -->
+
+    <!-- inputbox -->
+    <div id="maininputbox">
+        <div id="1">
+            <form id="search-form">
+            <input  type="text" placeholder="From?" id="search-input">
+            </form>
+        </div>
+        <div>
+            <span class="material-symbols-outlined">
+                sync_alt </span>
+        </div>
+        <div id="2">
+            <form id="search-form1">
+               <input type="text" placeholder="To?" id="search-input1">
+            </form>
+        </div>
+        <div id="3">
+            <input type="date" value="2023-01-03" min="2023-01-03" max="2025-01-30" id="start" name="trip-start"
+                placeholder="Depart">
+        </div>
+        <div id="4">
+            <input type="date" value="2023-01-03" min="2023-01-03" max="2025-01-30" id="end" name="trip-start"
+                placeholder="Return">
+            <!-- <input type="text" placeholder="WED/23?"> -->
+        </div>
+        <div id="XZeX-col-button-wrapper"
+            class="col _iac _iad _iae _iaa _iab _iys _iyv _i5L _iyq _iXk _iAU _iAV _h-8 _ij0 centre">
+            <button  id="Search" type="submit" aria-label="Search flights" title="Search flights"
+                aria-hidden="false" tabindex="0">
+                <span class="v-c-p centre ">
+                    <span class="icon ">
+                        <svg class="_ivP _iv1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54" width="40"
+                            height="42">
+                            <path fill="currentColor"
+                                d="M38.25,35.59l-4.42-4.41a10.14,10.14,0,1,0-3.65,3.65l4.41,4.42a2.59,2.59,0,0,0,3.66-3.66ZM17.53,26.1a7.58,7.58,0,1,1,7.58,7.58A7.59,7.59,0,0,1,17.53,26.1Z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="text "></span>
+                </span> 
+            </button>
+        </div>
+        <!-- <button onclick="load1()" type="submit"> Search</button> -->
+    </div>
+    <!-- Api work -->
+    <div id="box">
+    </div>
+
+    <div id="box1">
+    </div>
+
+    <div>
+        <h4>Privacy</h4>
+    </div>
+    
+
+    <!-- Navbar -->
+    <div id="footer"></div>
+</body>
+
+</html>
+<script src="flight1.js">
+</script>
+
+<script type="module">
+    import { header,footer } from "./header_footer.js";
+    document.getElementById("nav").innerHTML=header();
+    document.getElementById("footer").innerHTML=footer();
+    </script>

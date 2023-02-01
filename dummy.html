@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <a href=""></a>
+    </div>
+</body>
+</html>
+<script>
+    
+let alldata;
+async function load() {
+    let res = await fetch("http://localhost:3000/posts");
+    let data = await res.json();
+    console.log(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items[0]);
+    alldata = data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items;
+    appendData(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items);
+    // appendData(data[0].OneWayAvailabilityResponse.ItinearyDetails[0].Items)
+}
+function appendData(dataarr) {
+    // console.log()
+    let container = document.getElementById("parent");
+    container.innerHTML = "";
+    dataarr.forEach((ele, index) => {
+        let div = document.createElement("div");
+        let div0 = document.createElement("div");
+
+        let Airlinimg = document.createElement("img");
+        Airlinimg.src = "https://www.logo.wine/a/logo/IndiGo/IndiGo-Logo.wine.svg"
+        Airlinimg.style.width = "50px";
+        Airlinimg.style.height = "52px";
+ 
+        let AirlineName1 = document.createElement("img");
+        AirlineName1.src = ele.FlightDetails[0].img;
+        AirlineName1.style.width = "50px";
+        AirlineName1.style.height = "52px";
+
+        div0.append(Airlinimg,AirlineName1);
+        div.append(div0);
+        div.setAttribute("class", "card");
+        div.style.display = "flex";
+        div.style.justifyContent = "space-between";
+        container.append(div);
+    });
+}
+load();
+</script>

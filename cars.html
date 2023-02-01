@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Page</title>
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAMAAAAua3VzAAAAk1BMVEX///8Af6/JSjj0jwD0igD4t3H++vrIRzTPY1UAe63s9Pj68O9Xmb7IRDD86dn0jx/5xJTTc2jhp6GVvNTIPyn0+PvK4OsigbDB2ufb6/Ll8PY8ibX98OT0ixKawdcAcqg+kLn72LXlsqzqwbz25OHNXE7XfnTv0M3FMRTLUkHFNhzRaVzbjYQkibU/l71vqsmx0eDwAfsrAAABt0lEQVR4nO3c2W7CMBBAUeMCAULaAmFJCmFpWAul//91RUitKmRgnrBHvfc5lo+MB/FCjCEiIiIiIpLVktb3iGxLGzgWj5+FjR2L64uus8V7efloU9rIsU9t8iJqUnMhl6mrJE3sdrWu/320Is2JrD6JqjqRjcheKUo320UcOPLsbCyCR56Yu9XPYYaLtDb9KMNH2rQRh4+0SScOH2nTrgKk3ZQKkOlKATLaluEjbdLVgDwNuNQ4dP0KegQysmX4SLtZK0DuugqQ6V4BMuooQNqlBuRWA9KCBAkSJEiQIEGCBAkSJMhgkRlIkCBBggQJEiRIkCBBgnwsMleAfAMJEiRIkCBB/iJbIEGCBAnyJtL1RzaQIEGCBAkSJEiQIEH+J+RQA/KgAfmpAXlsKkAWUwXIkQZkJjP6RfbbskvpFWl6GpCZ7OvcL9LIPm/PyFw0356RppAc5cwzUjTgvk/S9Gf3ld6RJruv9I80+fHe9Pi+k+eKWfPmaQaBNHlxmN5ghoE8zc/gOBxWrrz77cqdFHbl5W+JrMuV2VfRc1Y4tjHzV2FzF3LfEeba+lHF0nwiiYiIiIhIVd/GvLhS4+AC/gAAAABJRU5ErkJggg==">
+    <script src="https://kit.fontawesome.com/05ed811abe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./headerFooter.css">
+    <link rel="stylesheet" href="cars.css">
+    <script src="https://kit.fontawesome.com/72335aff3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- nav -->
+    <div id="nav">
+    </div>
+    <div id="car_root">
+        <!-- --drop down section -->
+        <div id="drop_section">
+            <div id="drop_selection">
+                <select name="" id="drop">
+                    <option value="">Diffrent drop-off</option>
+                    <option value="">Same drop-off</option>
+                    <option value="">Diffrent drop-off</option>
+                </select>
+            </div>
+            <div id="age_selection">
+                <select name="" id="age">
+                    <option value="">Driver's age : <span class="bold">26-65</span>
+                    <option value="">Driver' age less than <span class="bold">18</span></option>
+                </select>
+            </div>
+        </div>
+
+        <!-- input section -->
+
+        <div id="input_from">
+            <input type="text" id="from" placeholder="Enter a Pickup Place">
+            <input type="text" id="to" placeholder="Enter a drop Place">
+            <input type="datetime-local" id="start-time" placeholder="Enter a Start Date">
+            <input type="datetime-local" id="end-time" placeholder="Enter a End Date">
+            <div id="search">
+                <i class=" fa-solid fa-magnifying-glass"></i>
+            </div>
+
+        </div>
+
+
+        <!--  Filter section -->
+
+            <div id="upper">
+
+            </div>
+
+        <!-- Populating data -->
+        <div id="main">
+        <div id="showdata">
+        
+        </div>
+        <div id="map">
+        </div>
+        </div>
+
+    </div>
+    <!-- footer -->
+    
+    <div id="footer"></div>
+</body>
+
+</html>
+
+<script src="cars.js" ></script>
+   <script  type="module">
+       import { header,footer } from "./header_footer.js";
+    document.getElementById("nav").innerHTML=header();
+    document.getElementById("footer").innerHTML=footer();
+   </script>
+    
+
